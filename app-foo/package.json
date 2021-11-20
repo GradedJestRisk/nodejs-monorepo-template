@@ -43,8 +43,8 @@
     "lint:code": "eslint .",
     "lint:dependencies": "depcheck",
     "lint:file-and-directory-names": "ls-lint",
-    "lint:package-properties": "npmPkgJsonLint --quiet .",
     "lint:package-format": "json-format --indent 2 package.json",
+    "lint:package-properties": "npmPkgJsonLint --quiet .",
     "preinstall": "npx check-engine",
     "test": "mocha ./test"
   },
