@@ -29,8 +29,10 @@ workflows:
           filters:
             branches:
               ignore:
-                - master
-
+                - main
+      - build_and_test_root:
+          requires:
+            - checkout
       - build_and_test_foo:
           requires:
             - checkout
@@ -50,6 +52,26 @@ jobs:
           root: ~/root
           paths:
             - .
+
+  build_and_test_root:
+    docker:
+      - image: circleci/node:14.17.0
+    working_directory: ~/root
+    steps:
+      - attach_workspace:
+          at: ~/root
+      - run: cat package*.json > cachekey
+      - restore_cache:
+          keys:
+            - v1-api-npm-{{ checksum "cachekey" }}
+      - run: npm ci
+      - save_cache:
+          key: v1-api-npm-{{ checksum "cachekey" }}
+          paths:
+            - ~/.npm
+      - run:
+          name: lint
+          command: npm run lint
 
   build_and_test_foo:
     docker:
