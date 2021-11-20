@@ -18,7 +18,7 @@
   ],
   "license": "ISC",
   "main": "index.js",
-  "name": "nodejs-monorepo-template",
+   "name": "nodejs-monorepo-template",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GradedJestRisk/nodejs-monorepo-template.git"
