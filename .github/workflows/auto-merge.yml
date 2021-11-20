@@ -14,9 +14,9 @@ jobs:
       - name: automerge
         uses: pascalgn/automerge-action@v0.14.3
         env:
-          GITHUB_TOKEN: '${{ secrets.AUTO_MERGE_TOKEN }}'
-          MERGE_LABELS: ':rocket: Ready to Merge,!:warning: Blocked'
+          GITHUB_TOKEN: "${{ secrets.AUTO_MERGE_TOKEN }}"
+          MERGE_LABELS: ":rocket: Ready to Merge,!:warning: Blocked"
           MERGE_COMMIT_MESSAGE: pull-request-title
-          UPDATE_LABELS: ':rocket: Ready to Merge'
+          UPDATE_LABELS: ":rocket: Ready to Merge"
           UPDATE_METHOD: rebase
-          MERGE_FORKS: 'false'
+          MERGE_FORKS: "false"
