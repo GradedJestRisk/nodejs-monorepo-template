@@ -8,7 +8,8 @@
     "lint:circle-ci": "eslint --ext .yml .circleci",
     "lint:gh-action": "eslint --ext .yml .github",
     "lint:dependencies": "depcheck",
-    "lint:package-format": "json-format --indent 2 package.json"
+    "fix:package-format": "json-format --indent 2 package.json",
+    "lint:package-format" : "cat package.json | npx json-format --indent 2  | diff --report-identical-files package.json - > /dev/null"
   },
   "repository": {
     "type": "git",
