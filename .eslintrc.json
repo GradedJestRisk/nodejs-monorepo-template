@@ -1,10 +1,7 @@
 {
+  "root": true,
   "extends": [
-    "../.eslintrc.json",
-    "eslint:recommended",
-    "plugin:prettier/recommended",
-    "plugin:node/recommended",
-    "plugin:mocha/recommended"
+    "plugin:yml/standard"
   ],
   "parserOptions": {
     "ecmaVersion": 2018,
