@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "run-p lint:*",
-    "lint:yaml": "eslint --ext .yml .circleci",
+    "lint:circle-ci": "eslint --ext .yml .circleci",
+    "lint:gh-action": "eslint --ext .yml .github",
     "lint:dependencies": "depcheck"
   },
   "repository": {
