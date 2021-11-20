@@ -1,0 +1,51 @@
+{
+  "author": {
+    "name": "Graded Jest Risk",
+    "url": "https://github.com/GradedJestRisk"
+  },
+  "bugs": "https://github.com/GradedJestRisk/nodejs-monorepo-template/issues",
+  "dependencies": {
+    "check-engine": "^1.10.1"
+  },
+  "description": "foo application",
+  "devDependencies": {
+    "@ls-lint/ls-lint": "^1.10.0",
+    "chai": "^4.3.4",
+    "depcheck": "^1.4.2",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-mocha": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "json-format-cli": "^1.1.1",
+    "mocha": "^9.1.3",
+    "npm-package-json-lint": "^5.4.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.4.1"
+  },
+  "engines": {
+    "node": "14.17.0",
+    "npm": "6.14.13"
+  },
+  "homepage": "https://github.com/GradedJestRisk/nodejs-monorepo-template",
+  "keywords": [
+    "javascript",
+    "node",
+    "template"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "app-foo",
+  "repository": "https://github.com/GradedJestRisk/nodejs-monorepo-template",
+  "scripts": {
+    "lint": "run-p lint:*",
+    "lint:code": "eslint .",
+    "lint:dependencies": "depcheck",
+    "lint:file-and-directory-names": "ls-lint",
+    "lint:package-properties": "npmPkgJsonLint --quiet .",
+    "lint:package-format": "json-format --indent 2 package.json",
+    "preinstall": "check-engine",
+    "test": "mocha ./test"
+  },
+  "version": "1.0.0"
+}

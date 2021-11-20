@@ -1,0 +1,11 @@
+ls:
+  .js: kebab-case
+
+  .dir: kebab-case
+
+  test:
+    _test.js: kebab-case
+
+ignore:
+  - .git
+  - node_modules
