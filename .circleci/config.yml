@@ -46,8 +46,11 @@ jobs:
     steps:
       - checkout
       - run:
-          command:
-            rm -rf .git/
+          name: install shared code
+          command: npm ci
+      - run:
+          name: remove git hidden folder
+          command: rm -rf .git/
       - persist_to_workspace:
           root: ~/root
           paths:
