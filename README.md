@@ -4,7 +4,8 @@
 
 ### Create repository
 
-When creating a Github repository, select this repository as a template
+<!-- markdownlint-disable-next-line MD013 -->
+When [creating a Github repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), select this repository as a template
 
 ### Setup repository
 
