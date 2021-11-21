@@ -1,0 +1,19 @@
+{
+   "version": "0.1",
+   "language": "en",
+   "words": [
+      "ullo"
+   ],
+   "flagWords": [
+      "morning"
+   ],
+   "dictionaries": [
+      "custom"
+   ],
+   "dictionaryDefinitions": [
+      {
+         "name": "custom",
+         "path": "./dictionaries/custom.txt"
+      }
+   ]
+}

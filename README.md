@@ -9,6 +9,11 @@ When [creating a Github repository](https://docs.github.com/en/repositories/crea
 
 ### Setup repository
 
+Create hooks 
+
+- Copy [hooks templates](./githooks) to  actual [hooks](./git/hooks), eg. `cp ./.githooks/pre-commit ./.git/hooks/`
+- Grant them execution rights, eg `chmod +x ./.git/hooks/pre-commit`
+
 Add protection to the default branch:
 
 - PR required before merge
@@ -63,6 +68,13 @@ The following files are linted:
 - JSON
 - markdown
 - YAML (GithubAction, CircleCi, docker-compose)
+
+The following files are spelled-checked:
+
+- Javascript
+
+Custom word should be added to the [dictionary](dictionaries/custom.txt)
+
 
 ## Dynamic test
 
