@@ -62,7 +62,7 @@ The following files are linted:
 - JavaScript
 - JSON
 - markdown
-- YAML (todo)
+- YAML (GithubAction, CircleCi, docker-compose)
 
 ## Dynamic test
 
