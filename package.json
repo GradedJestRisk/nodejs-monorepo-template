@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/GradedJestRisk/nodejs-monorepo-template#readme",
   "keywords": [
+    "javascript",
+    "node",
+    "template"
   ],
   "license": "ISC",
   "main": "index.js",
