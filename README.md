@@ -20,6 +20,25 @@ Add continuous integration
 - Create CircleCI project, trigger a test on default branch and check it pass
 - Add check to default branch
 
+Add Github action integration
+
+- Create a personal access token with following scopes: `repo` and `workflow`
+- Add it to repository secrets under `AUTO_MERGE_TOKEN` name
+- Create two labels `:rocket: Ready to Merge` and `!:warning: Blocked`
+
+Check entire workflow
+
+- Create a branch with untested code in `app-foo/src`
+- Create a pull request
+- Add `:rocket: Ready to Merge` label
+- Check the PR is not merged because CI fails on coverage
+- Remove  `:rocket: Ready to Merge` label
+- Add `!:warning: Blocked` label
+- Add `/* istanbul ignore next */` before untested code
+- Check the PR is not merged although CI pass
+- Add `:rocket: Ready to Merge` label
+- Check the PR is merged
+
 ## Developer assistance
 
 Formatters:
@@ -50,6 +69,8 @@ The following files are linted:
 Runner: Mocha
 
 Assertion: Chai
+
+Test coverage: Nyc
 
 ## Continuous integration
 

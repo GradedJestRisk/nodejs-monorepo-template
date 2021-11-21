@@ -9,3 +9,4 @@ ls:
 ignore:
   - .git
   - node_modules
+  - .nyc_output
