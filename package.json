@@ -33,6 +33,7 @@
     "lint": "run-p lint:*",
     "lint:circle-ci": "eslint --ext .yml .circleci",
     "lint:dependencies": "depcheck",
+    "lint:docker-compose": "eslint ./docker-compose.yml",
     "lint:documentation-link": "markdown-link-check --quiet ./README.md",
     "lint:documentation-structure": "markdownlint '**/*.md' --ignore node_modules --ignore app-foo/node_modules",
     "lint:gh-action": "eslint --ext .yml .github",
