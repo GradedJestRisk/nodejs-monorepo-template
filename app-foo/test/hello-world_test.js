@@ -4,18 +4,14 @@ const { sayHello } = require("../src/hello-world");
 require("chai").should();
 
 describe("#sayHello", function () {
-  describe("should greet someone", function () {
-    describe("should", function () {
-      it("works this way", function () {
-        // given
-        const someone = "world";
+  it("should greet someone", function () {
+    // given
+    const someone = "world";
 
-        // when
-        const actualGreeting = sayHello(someone);
+    // when
+    const actualGreeting = sayHello(someone);
 
-        // then
-        actualGreeting.should.equal("Hello, world!");
-      });
-    });
+    // then
+    actualGreeting.should.equal("Hello, world!");
   });
 });

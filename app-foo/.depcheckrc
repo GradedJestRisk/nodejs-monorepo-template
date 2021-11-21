@@ -1,0 +1,6 @@
+ignores: ["cspell"]
+
+# "cspell" is used in `lint:code-typo` task
+
+
+

@@ -1,0 +1,5 @@
+ignores: ["lint-staged"]
+
+# "lint-staged" is used in git hooks
+
+

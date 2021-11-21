@@ -1,4 +1,5 @@
 const sayHello = (someone) => {
+  // we cannot reasonably use Heeello
   return `Hello, ${someone}!`;
 };
 
